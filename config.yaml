@@ -15,7 +15,7 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: hk, server: ca.bigniuniu.top, port: 443, udp: true, skip-cert-verify: false, sni: ca.bigniuniu.top, type: hysteria2, password: xJzPqmZcSkhvCzqugapvHU6U }
+    - { name: hk, server: ca.bigniuniu.top, port: 443, udp: true, skip-cert-verify: false, sni: ca.bigniuniu.top, obfs: salamander, obfs-password: a_nm_ca4852, type: hysteria2, password: xJzPqmZcSkhvCzqugapvHU6U }
 proxy-groups:
 -   name: config
     type: select
