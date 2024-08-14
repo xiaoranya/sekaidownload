@@ -17,9 +17,9 @@ dns:
 proxies:
     - { name: hk, server: ca.bigniuniu.top, port: 443, udp: true, skip-cert-verify: false, sni: ca.bigniuniu.top, type: hysteria2, password: xJzPqmZcSkhvCzqugapvHU6U }
 proxy-groups:
-    - name: config
-        type: select
-        proxies:
+-   name: config
+    type: select
+    proxies:
           - hk
 
 
