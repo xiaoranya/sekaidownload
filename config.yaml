@@ -15,7 +15,7 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: hk, server: ca.bigniuniu.top, port: 443, udp: true, skip-cert-verify: false, sni: ca.bigniuniu.top, obfs: salamander, obfs-password: a_nm_ca4852, type: hysteria2, password: xJzPqmZcSkhvCzqugapvHU6U }
+    - { name: hk, server: ca.bigniuniu.top, port: 443, udp: true, skip-cert-verify: false, sni: ca.bigniuniu.top, type: hysteria2, password: TS0siBI4157tG7l0NjRiiWAjxhc }
 proxy-groups:
 -   name: config
     type: select
@@ -152,7 +152,7 @@ rules:
     - 'DOMAIN-SUFFIX,sogoucdn.com,DIRECT'
     - 'DOMAIN-SUFFIX,sohu.com,DIRECT'
     - 'DOMAIN-SUFFIX,soku.com,DIRECT'
-    - 'DOMAIN-SUFFIX,speedtest.net,DIRECT'
+    - 'DOMAIN-SUFFIX,speedtest.net,config'
     - 'DOMAIN-SUFFIX,sspai.com,DIRECT'
     - 'DOMAIN-SUFFIX,suning.com,DIRECT'
     - 'DOMAIN-SUFFIX,taobao.com,DIRECT'
